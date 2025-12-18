@@ -1,0 +1,193 @@
+{
+  "authentication": {
+    "admin@demo.com": {
+      "success": true,
+      "role": "admin",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImU2M2IwNTk1LTJiYmEtNGQxOC1hZDhlLTIyYmZjM2UzZjUwMiIsInVzZXJJZCI6ImU2M2IwNTk1LTJiYmEtNGQxOC1hZDhlLTIyYmZjM2UzZjUwMiIsImVtYWlsIjoiYWRtaW5AZGVtby5jb20iLCJuYW1lIjoiU3lzdGVtIEFkbWluaXN0cmF0b3IiLCJyb2xlIjoiYWRtaW4iLCJjb2xsZWdlSWQiOiIyZGMxMTE5Mi04YTZhLTQ4ZTgtOGM5Mi1mOTBjMGFlMTU4ZDgiLCJkZXBhcnRtZW50SWQiOm51bGwsImlhdCI6MTc2MjAzMTc2MCwiZXhwIjoxNzYyNjM2NTYwLCJhdWQiOiJzdHVkZW50LWFjdC1sbXMtdXNlcnMiLCJpc3MiOiJzdHVkZW50LWFjdC1sbXMifQ.G-ZKx9JoZgD94i8VlqnMP3aZlNWF6S9r4qEY8E3f7Z8",
+      "error": null
+    },
+    "principal@demo.com": {
+      "success": true,
+      "role": "principal",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBjOWZlNWE4LTgzZGQtNDdlOS1iZjEwLTllMDU3ZThmMTMwMyIsInVzZXJJZCI6IjBjOWZlNWE4LTgzZGQtNDdlOS1iZjEwLTllMDU3ZThmMTMwMyIsImVtYWlsIjoicHJpbmNpcGFsQGRlbW8uY29tIiwibmFtZSI6IkRyLiBTYXJhaCBKb2huc29uIiwicm9sZSI6InByaW5jaXBhbCIsImNvbGxlZ2VJZCI6IjJkYzExMTkyLThhNmEtNDhlOC04YzkyLWY5MGMwYWUxNThkOCIsImRlcGFydG1lbnRJZCI6bnVsbCwiaWF0IjoxNzYyMDMxNzYxLCJleHAiOjE3NjI2MzY1NjEsImF1ZCI6InN0dWRlbnQtYWN0LWxtcy11c2VycyIsImlzcyI6InN0dWRlbnQtYWN0LWxtcyJ9.kRoy0iS2wFZSJQYlusE-NkpTv3TqSy3hdVpRMHZ7ScU",
+      "error": null
+    },
+    "hod.cse@demo.com": {
+      "success": true,
+      "role": "hod",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRlNzk4MTBmLWI0YjQtNDBiOS05MTBkLTczNmZiMjIxOWQ1YyIsInVzZXJJZCI6IjRlNzk4MTBmLWI0YjQtNDBiOS05MTBkLTczNmZiMjIxOWQ1YyIsImVtYWlsIjoiaG9kLmNzZUBkZW1vLmNvbSIsIm5hbWUiOiJEci4gQWxpY2UgSm9obnNvbiIsInJvbGUiOiJob2QiLCJjb2xsZWdlSWQiOiIyZGMxMTE5Mi04YTZhLTQ4ZTgtOGM5Mi1mOTBjMGFlMTU4ZDgiLCJkZXBhcnRtZW50SWQiOiI5ZTk0MWZjYy02YjliLTQyNTYtOTk3ZS1hMmJlM2E5NzRlNmMiLCJpYXQiOjE3NjIwMzE3NjEsImV4cCI6MTc2MjYzNjU2MSwiYXVkIjoic3R1ZGVudC1hY3QtbG1zLXVzZXJzIiwiaXNzIjoic3R1ZGVudC1hY3QtbG1zIn0._O-zXToFPMqDZxuS8VgnGtimNrw26jcrTUDtofvRGrA",
+      "error": null
+    },
+    "hod.ece@demo.com": {
+      "success": true,
+      "role": "hod",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg4ZjdjZDk5LTJhOGQtNDVhZi1hZDdkLTg3ODgwMDY4YTVkYSIsInVzZXJJZCI6Ijg4ZjdjZDk5LTJhOGQtNDVhZi1hZDdkLTg3ODgwMDY4YTVkYSIsImVtYWlsIjoiaG9kLmVjZUBkZW1vLmNvbSIsIm5hbWUiOiJEci4gTWljaGFlbCBDaGVuIiwicm9sZSI6ImhvZCIsImNvbGxlZ2VJZCI6IjJkYzExMTkyLThhNmEtNDhlOC04YzkyLWY5MGMwYWUxNThkOCIsImRlcGFydG1lbnRJZCI6bnVsbCwiaWF0IjoxNzYyMDMxNzYxLCJleHAiOjE3NjI2MzY1NjEsImF1ZCI6InN0dWRlbnQtYWN0LWxtcy11c2VycyIsImlzcyI6InN0dWRlbnQtYWN0LWxtcyJ9.Of9GDKIhJwGwQj9vaVntlWIiSO9GcffmoOHGI_FV3Hw",
+      "error": null
+    },
+    "faculty@demo.com": {
+      "success": true,
+      "role": "faculty",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM1ZmM1OGZkLTRmZTYtNDk4Yi1iZWEwLTY2Mjc3MzllNWQ5MCIsInVzZXJJZCI6IjM1ZmM1OGZkLTRmZTYtNDk4Yi1iZWEwLTY2Mjc3MzllNWQ5MCIsImVtYWlsIjoiZmFjdWx0eUBkZW1vLmNvbSIsIm5hbWUiOiJQcm9mLiBFbWlseSBEYXZpcyIsInJvbGUiOiJmYWN1bHR5IiwiY29sbGVnZUlkIjoiMmRjMTExOTItOGE2YS00OGU4LThjOTItZjkwYzBhZTE1OGQ4IiwiZGVwYXJ0bWVudElkIjpudWxsLCJpYXQiOjE3NjIwMzE3NjEsImV4cCI6MTc2MjYzNjU2MSwiYXVkIjoic3R1ZGVudC1hY3QtbG1zLXVzZXJzIiwiaXNzIjoic3R1ZGVudC1hY3QtbG1zIn0.PtkoZtqRDbWn_X1RMFDV4xSF2DCLp-4lQyndYngtPRo",
+      "error": null
+    },
+    "staff@demo.com": {
+      "success": true,
+      "role": "staff",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk0YTRjMjQ5LTZlNmQtNDYyMi1hYTA5LTY1MDllZmM5MzRkMiIsInVzZXJJZCI6Ijk0YTRjMjQ5LTZlNmQtNDYyMi1hYTA5LTY1MDllZmM5MzRkMiIsImVtYWlsIjoic3RhZmZAZGVtby5jb20iLCJuYW1lIjoiUHJvZi4gUm9iZXJ0IFdpbHNvbiIsInJvbGUiOiJmYWN1bHR5IiwiY29sbGVnZUlkIjoiMmRjMTExOTItOGE2YS00OGU4LThjOTItZjkwYzBhZTE1OGQ4IiwiZGVwYXJ0bWVudElkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAxIiwiaWF0IjoxNzYyMDMxNzYyLCJleHAiOjE3NjI2MzY1NjIsImF1ZCI6InN0dWRlbnQtYWN0LWxtcy11c2VycyIsImlzcyI6InN0dWRlbnQtYWN0LWxtcyJ9.VgdxeptnGTcI4IMdSr_3PT36V4FWbnUfFL0Wau7IMdI",
+      "error": null
+    },
+    "student1@demo.com": {
+      "success": true,
+      "role": "student",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ODAwZmY5LTc5ZDgtNDBiZC05NjI5LTg0YmJjNmNkMjA2OCIsInVzZXJJZCI6IjY5ODAwZmY5LTc5ZDgtNDBiZC05NjI5LTg0YmJjNmNkMjA2OCIsImVtYWlsIjoic3R1ZGVudDFAZGVtby5jb20iLCJuYW1lIjoiSm9obiBTdHVkZW50Iiwicm9sZSI6InN0dWRlbnQiLCJjb2xsZWdlSWQiOiIyZGMxMTE5Mi04YTZhLTQ4ZTgtOGM5Mi1mOTBjMGFlMTU4ZDgiLCJkZXBhcnRtZW50SWQiOiI5ZTk0MWZjYy02YjliLTQyNTYtOTk3ZS1hMmJlM2E5NzRlNmMiLCJpYXQiOjE3NjIwMzE3NjIsImV4cCI6MTc2MjYzNjU2MiwiYXVkIjoic3R1ZGVudC1hY3QtbG1zLXVzZXJzIiwiaXNzIjoic3R1ZGVudC1hY3QtbG1zIn0.qb3HxWw5mPE4SgykPIFm5V8qiUQxSGYQhi48N-w2_8k",
+      "error": null
+    },
+    "student2@demo.com": {
+      "success": true,
+      "role": "student",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJjNjE0MGQ4LTg4YTYtNDIzOC05YzQyLTBkYjI0ZjMyM2Q5YiIsInVzZXJJZCI6ImJjNjE0MGQ4LTg4YTYtNDIzOC05YzQyLTBkYjI0ZjMyM2Q5YiIsImVtYWlsIjoic3R1ZGVudDJAZGVtby5jb20iLCJuYW1lIjoiSmFuZSBTdHVkZW50Iiwicm9sZSI6InN0dWRlbnQiLCJjb2xsZWdlSWQiOiIyZGMxMTE5Mi04YTZhLTQ4ZTgtOGM5Mi1mOTBjMGFlMTU4ZDgiLCJkZXBhcnRtZW50SWQiOm51bGwsImlhdCI6MTc2MjAzMTc2MiwiZXhwIjoxNzYyNjM2NTYyLCJhdWQiOiJzdHVkZW50LWFjdC1sbXMtdXNlcnMiLCJpc3MiOiJzdHVkZW50LWFjdC1sbXMifQ.i6oWKFPm1SWeo-GWwNMzty7pqpISFk6udz7U04KXrlA",
+      "error": null
+    }
+  },
+  "endpoints": {
+    "Health Check": {
+      "success": false,
+      "status": 401,
+      "error": "Request failed with status code 401",
+      "endpoint": "GET /health"
+    },
+    "Users List": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /users?page=1&limit=10"
+    },
+    "Departments List": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /departments"
+    },
+    "Colleges List": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /colleges"
+    },
+    "Courses List": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /courses"
+    },
+    "Academic Years": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /academic-years"
+    },
+    "Learning Resources": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /learning-resources?page=1&limit=5"
+    },
+    "Sections": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /sections"
+    },
+    "Dashboard Activity": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /dashboard/activity"
+    },
+    "Admin States": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /dashboard/admin/states"
+    },
+    "College Ranking": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /dashboard/admin/college-ranking"
+    },
+    "Registration Requests": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /registration-requests"
+    },
+    "Invitations": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /invitations"
+    },
+    "Content Resources": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /content/resources"
+    },
+    "Content Guidelines": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /content/guidelines"
+    },
+    "Recent Uploads": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /uploads/photos/recent?limit=15"
+    },
+    "Student Profile": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /auth/profile"
+    },
+    "My Progress": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /enrollment/my-progress"
+    },
+    "My Selection": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /enrollment/my-selection"
+    },
+    "Selection Status": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /enrollment/status"
+    },
+    "Resource Catalog": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "endpoint": "GET /resource-catalog?departmentId=550e8400-e29b-41d4-a716-446655440001&limit=100"
+    }
+  },
+  "errors": [
+    {
+      "test": "Health Check",
+      "endpoint": "GET /health",
+      "error": "Request failed with status code 401",
+      "status": 401
+    }
+  ],
+  "summary": {
+    "passed": 28,
+    "failed": 1,
+    "total": 29
+  }
+}
