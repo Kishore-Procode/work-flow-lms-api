@@ -2,66 +2,99 @@ name: API CI Pipeline
 
 on:
   push:
-    branches:
-      - practice
-      - practice-main
+    branches: [practice, practice-main]
   pull_request:
-    branches:
-      - practice
-      - practice-main
+    branches: [practice, practice-main]
 
+env:
+  NODE_VERSION: 18.x
+
+# ======================
+# 🧪 UNIT TEST JOB
+# ======================
 jobs:
-  ci:
+  unit-tests:
+    name: Unit Tests
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
-      # 1️⃣ Checkout code
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      # 2️⃣ Setup Node.js
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ env.NODE_VERSION }}
           cache: npm
 
-      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: npm ci
 
-      # =========================
-      # 🔹 PRACTICE BRANCH
-      # =========================
-      - name: Run unit tests (practice)
-        if: github.ref == 'refs/heads/practice'
+      - name: Run unit tests
         run: npm run test:ci
 
-      # Optional build (won't fail pipeline)
-      - name: Optional build (practice)
-        if: github.ref == 'refs/heads/practice'
-        continue-on-error: true
-        run: npm run build
+# ======================
+# 🏗️ BUILD JOB
+# ======================
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: unit-tests
 
-      # =========================
-      # 🔹 PRACTICE-MAIN BRANCH
-      # =========================
-      - name: Run unit tests (practice-main)
-        if: github.ref == 'refs/heads/practice-main'
-        run: npm run test:ci
+    if: |
+      github.ref == 'refs/heads/practice' ||
+      github.ref == 'refs/heads/practice-main'
 
-      - name: Production build (mandatory)
-        if: github.ref == 'refs/heads/practice-main'
-        run: npm run build
+    continue-on-error: ${{ github.ref == 'refs/heads/practice' }}
 
-      - name: Dev quality build (lint, prettier, type-check)
-        if: github.ref == 'refs/heads/practice-main'
-        run: npm run quality
+    steps:
+      - uses: actions/checkout@v4
 
-      - name: Dev build check
-        if: github.ref == 'refs/heads/practice-main'
-        run: npm run type-check
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+# ======================
+# 🧹 DEV QUALITY JOB
+# ======================
+  dev-quality:
+    name: Dev Quality Checks
+    runs-on: ubuntu-latest
+    needs: build
+
+    if: github.ref == 'refs/heads/practice-main'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - run: npm ci
+      - run: npm run quality
+
+# ======================
+# 🔍 TYPE CHECK JOB
+# ======================
+  type-check:
+    name: Type Check
+    runs-on: ubuntu-latest
+    needs: dev-quality
+
+    if: github.ref == 'refs/heads/practice-main'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - run: npm ci
+      - run: npm run type-check
